@@ -1,0 +1,89 @@
+/* styleup.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Icons styling */
+nav ul li a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Main container styling */
+.User {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Adding some responsive behavior */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a i {
+        margin-right: 5px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}

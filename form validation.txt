@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<form ation="#" method="post">
+		<input type="text" id="n1" placeholder="Word"/>
+		<input type="button" onclick='check("n2")'/>
+		</form>
+		<script>
+			function check()
+			var n1 = document.getElementById("n1").value;
+			if(n1.length>5 && n1.length<20)
+			{
+				console.log("OK"+n1);
+			}
+			else{
+					cosole.log("not ok");
+				}
+				}
+		</script>
+	</body>
+</html>
